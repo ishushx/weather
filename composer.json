@@ -1,0 +1,30 @@
+{
+    "name": "ishushx\/weather",
+    "description": "A weather SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ishushx",
+            "email": "ishushx@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7",
+        "illuminate/support": "^5.5,<5.9",
+        "guzzlehttp/guzzle": "^6.3",
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ishushx\\Weather\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ishushx\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
